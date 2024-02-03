@@ -1,6 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterLink } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { showDialog } from 'vant';
+
+showDialog({ message: '提示' });
 </script>
 
 <template>
@@ -17,7 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
-  <RouterView />
+  <!-- <RouterView /> -->
 </template>
 
 <style scoped>
